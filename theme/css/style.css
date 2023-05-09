@@ -566,9 +566,37 @@ ul.dropdown-menu li {
 .slider {
   background: url("../images/bg/home-1.jpg") no-repeat;
   background-size: cover;
-  background-position: 10% 0%;
+  background-position: center center;
   padding: 200px 0;
   position: relative;
+  animation-name: slide;
+  animation-duration: 24s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("../images/bg/home-1.jpg");
+  }
+  16.6% {
+    background-image: url("../images/bg/home-2.jpg");
+  }
+  33.3% {
+    background-image: url("../images/bg/home-3.jpg");
+  }
+  50% {
+    background-image: url("../images/bg/home-5.jpg");
+  }
+  66.6% {
+    background-image: url("../images/bg/home-6.jpg");
+  }
+  83.3% {
+    background-image: url("../images/bg/home-7.jpg");
+  }
+  100% {
+    background-image: url("../images/bg/home-1.jpg");
+  }
 }
 @media (max-width: 768px) {
   .slider {
